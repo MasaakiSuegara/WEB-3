@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="common/reset.css">
+    <!-- ブートストラップのＣＤＮ。reboot.css含む。使わないなら最後削除 -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- 以下３行分がgooglefontのリンク -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <title>トップページ(ページごとに変える)</title>
+</head>
+<body>
+
+
+    <!-- ヘッダーは作成後分解-->
+    <header class="headerBlock">
+        <div class="headerRow">
+            <nav class="gMenu">
+                <input class="menu-btn" type="checkbox" id="menu-btn">
+                <label class="menu-icon" for="menu-btn">
+                    <span class="navicon"></span>
+                </label>
+                <ul class="menu">
+                    <li><a href="#">TOP</a></li>
+                    <li><a href="#">商品一覧</a></li>
+                    <li><a href="#">よくある質問</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                    <li><a href="#">当サイトのポリシー</a></li>
+                </ul>
+            </nav>
+            <img class="hLogo" src="images/spLogo.svg" alt="ロゴ">
+            <img class="hLogin" src="images/spLogin.svg" alt="ログインアイコン">
+            <img class="hCart" src="images/spCart.svg" alt="カートアイコン">
+        </div>
+        <div class="searchBlock">
+            <button type="submit" class="searchBtn">
+                <img src="images/spSeachIcon.svg" alt="検索">
+            </button>
+            <input class="searchBox" type="text" name="search" placeholder="キーワードを入力">
+        </div>
+    </header>
+
+
+
+
+    <!-- トップページ部分 -->
+    <main>
+        <section class="heroBlock">
+            <p class="welcomeBlock">ようこそ、ゲスト様</p>
+            <div class="intro">
+                <img class="hItem1" src="images/spHeroTop.png" alt="ヒーロー画像">
+                <div class="newsContent">
+                    <div class="hImageBlock">
+                        <img class="hItem2" src="images/spNewItem.png" alt="新商品画像">
+                        <img class="hItem3" src="images/spDonutLifeTop.png" alt="ドーナツのある生活">
+                    </div>
+                    <img class="hItem4" src="images/spItemListTop.png" alt="商品一覧">
+                </div>
+                <img class="hItem5" src="images/spStoreIntroductionTop.png" alt="私たちの信念">
+            </div>
+        </section>
+        <section class="rankBlock">
+            <p class="rankHead">人気ランキング</p>
+            <div class="rankGrid">
+                <div class="rItem rItem1">
+                    <p class="rank rank1">1</p>
+                    <img class="itemImg1" src="images/spCcDonut.png" alt="1位CCドーナツ">
+                    <p class="itemName">CCドーナツ 当店オリジナル（5個入り）</p>
+                    <p class="price">税込  ￥1,500</p>
+                    <p class="cartIn">カートに入れる</p>
+                </div>
+                <div class="rItem rItem2">
+                    <p class="rank rank2">2</p>
+                    <img class="itemImg2" src="images/spFruitDonut14.png" alt="2位フルーツドーナツ12個">
+                    <p class="itemName">フルーツドーナツセット（12個入り）</p>
+                    <p class="price">税込  ￥3,500</p>
+                    <p class="cartIn">カートに入れる</p>
+                </div>
+                <div class="rItem rItem3">
+                    <p class="rank rank3">3</p>
+                    <img class="itemImg3" src="images/spFruitDonut12.png" alt="3位フルーツドーナツ14個">
+                    <p class="itemName">フルーツドーナツセット（14個入り）</p>
+                    <p class="price">税込  ￥4,000</p>
+                    <p class="cartIn">カートに入れる</p>
+                </div>
+                <div class="rItem ritem4">
+                    <p class="rank rankOut">4</p>
+                    <img class="itemImg4" src="images/spChocoDelight.png" alt="4位チョコデライトドーナツ">
+                    <p class="itemName">チョコレートデライト（5個入り）</p>
+                    <p class="price">税込  ￥1,600</p>
+                    <p class="cartIn">カートに入れる</p>
+                </div>
+                <div class=" rItem rItem5">
+                    <p class="rank rankOut">5</p>
+                    <img class="itemImg5" src="images/spCreamBoxDonut4.png" alt="5位ベストセレクション">
+                    <p class="itemName">ベストセレクションボックス（4個入り）</p>
+                    <p class="price">税込  ￥1,200</p>
+                    <p class="cartIn">カートに入れる</p>
+                </div>
+                <div class="rItem rItem6">
+                    <p class="rank rankOut">6</p>
+                    <img class="itemImg6" src="images/spStrawberryCrash.png" alt="6位ストロベリークラッシュ">
+                    <p class="itemName">ストロベリークラッシュ（5個入り）</p>
+                    <p class="price">税込  ￥1,800</p>
+                    <p class="cartIn">カートに入れる</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- フッターは作成後分解 -->
+    <footer class="footerBlock">
+        <div class="footerNavigation">
+            <p class="fnLink">よくある質問</p>
+            <p class="fnLink">お問い合わせ</p>
+            <p class="fnLink">当サイトのポリシー</p>
+        </div>
+        <img class="footerSns" src="images/spFooterSnsIcon.svg" alt="SNSアイコン">
+        <img class="footerLogo" src="images/spLogo.svg" alt="ロゴ">
+        <div class="crBlock">
+            <p class="cRight">Copyright (C) 2023 c.c.donuts</p>
+        </div>
+    </footer>
+
+</body>
+</html>
